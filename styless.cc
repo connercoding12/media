@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The BedWarz Pros</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+  <h1>The BedWarz Pros</h1>
+  <p>Join the best Bedwars guild 🚀</p>
+  <a class="btn" href="https://discord.gg/YOURINVITE">Join Discord</a>
+</header>
+
+<header>
+  <h1>The BedWarz Pros</h1>
+  <p>Join the best Bedwars guild 🚀</p>
+  <a class="btn" href="https://discord.gg/YOURINVITE">Join Discord</a>
+</header>
+
+<div class="section">
+  <h2>🎥 Latest YouTube Video</h2>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/YOURVIDEO"></iframe>
+</div>
+
+<div class="section">
+  <h2>🔴 Twitch Stream</h2>
+  <iframe src="https://player.twitch.tv/?channel=YOURNAME&parent=localhost" height="300" width="500"></iframe>
+</div>
+
+<div class="section">
+  <h2>📋 Guild Requirements</h2>
+  <div class="card">
+    <p>⭐ 150+ Bedwars Star</p>
+    <p>⚔️ 3+ FKDR</p>
+    <p>🏆 Active Player</p>
+  </div>
+</div>
+
+<div class="section">
+  <h2>📝 Apply Now</h2>
+  <div class="card">
+    <input type="text" placeholder="Minecraft Username"><br>
+    <input type="number" placeholder="Bedwars Star"><br>
+    <input type="text" placeholder="FKDR"><br>
+    <textarea placeholder="Why do you want to join?"></textarea><br>
+    <button class="btn" onclick="apply()">Submit</button>
+  </div>
+</div>
+
+<footer>
+  © 2026 The BedWarz Pros
+</footer>
+
+<script>
+function apply() {
+  alert("Application submitted! (Connect this to Discord bot later)");
+}
+</script>
+
+</body>
+</html>
+
+/* ================= styles.css ================= */
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom, #0f172a, #020617);
+  color: white;
+  text-align: center;
+}
+
+header {
+  padding: 40px 20px;
+}
+
+h1 {
+  font-size: 48px;
+  color: cyan;
+  text-shadow: 0 0 10px cyan;
+}
+
+.section {
+  padding: 40px 20px;
+}
+
+.btn {
+  display: inline-block;
+  margin: 10px;
+  padding: 12px 25px;
+  background: cyan;
+  color: black;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: white;
+  transform: scale(1.05);
+}
+
+iframe {
+  border-radius: 12px;
+  margin-top: 20px;
+}
+
+.card {
+  background: rgba(255,255,255,0.05);
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 15px;
+  max-width: 600px;
+  box-shadow: 0 0 10px rgba(0,255,255,0.3);
+}
+
+input, textarea {
+  width: 90%;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 8px;
+  border: none;
+}
+
+footer {
+  padding: 20px;
+  font-size: 14px;
+  opacity: 0.6;
+}
