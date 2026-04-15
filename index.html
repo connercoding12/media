@@ -84,6 +84,13 @@
 </header>
 
 <div class="section">
+  <h2>🎮 Live on Twitch</h2>
+  <div id="twitch-embed" class="card" style="max-width:900px;margin:0 auto; padding:0; overflow:hidden;">
+    <!-- Twitch embed will load here. Replace the channel in the script below. -->
+  </div>
+</div>
+
+<div class="section">
   <h2>🎥 Latest YouTube Video</h2>
   <iframe width="560" height="315" src="https://www.youtube.com/embed/8ww3EKUL7dU"></iframe>
 </div>
@@ -102,13 +109,6 @@ class="btn" href="https://www.youtube.com/@oConnerOG" target="_blank">
 Visit My YouTube Channel
 </a>
 
-<div class="section">
-  <h2>🎮 Live on Twitch</h2>
-  <div id="twitch-embed" class="card" style="max-width:900px;margin:0 auto; padding:0; overflow:hidden;">
-    <!-- Twitch embed will load here. Replace the channel in the script below. -->
-  </div>
-</div>
-
 
 <a
 class="btn" href="https://x.com/oConnerOG23" target="_blank">
@@ -120,15 +120,14 @@ Check it out on Main X
 </footer>
 
 <script>
-
 // Twitch embed
 // Replace 'oConnerOG' below with your Twitch channel name.
 // When testing locally, serve the page (e.g. via localhost) and include that host in `parent`.
+  const twitchChannel = 'oConnerOG'; // change to your channel
 </script>
 
 <script src="https://player.twitch.tv/js/embed/v1.js"></script>
 <script>
-  const twitchChannel = 'oConnerOG'; // change to your channel
   new Twitch.Embed("twitch-embed", {
     width: '100%',
     height: 480,
